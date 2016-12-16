@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Pristupna prijava</title>
+	<script src="https://use.fontawesome.com/9219af409b.js"></script>
+	<link rel="stylesheet" type="text/css" href="normalize.css">
+	<link href="https://fonts.googleapis.com/css?family=Droid+Sans" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<header>
+		<a href="http://www.srbijazamlade.rs/" target="_blank">
+			<img src="logo.png" alt="Logo SZM" width="50">
+		</a>
+		<a href="https://www.google.rs/" target="_blank"><i class="fa fa-search fa-1x" aria-hidden="true"></i></a>
+		<nav>
+			<ul>
+				<li><a href="#">Početna</a></li>
+				<li><a href="#">O nama</a></li>
+				<li><a href="#">Kontakt</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<h1>Pristupna prijava za prijem u organizaciju "Srbija za mlade"</h1>
+		<form action="" method="" autocomplete="off">
+			<!--First section-->
+			<fieldset id="first">
+				<legend>Osnovni podaci</legend>
+
+				<label for="firstname">Ime:</label>
+				<input type="text" name="firstname" id="firstname" placeholder="Pavle" required autofocus>
+
+				<label for="lastname">Prezime:</label>
+				<input type="text" name="lastname" id="lastname" placeholder="Pavlović" required>
+
+				<label for="email">E-mail:</label>
+				<input type="email" name="email" id="email" placeholder="sometext@example.com" required>
+
+				<label for="socnet">Društvena mreža:</label>
+				<input type="url" name="socnet" id="socnet" placeholder="facebook, instagram etc. link">
+
+				<input type="reset" value="Resetuj">
+				<input type="submit" value="Provera">
+			</fieldset>
+			<!--Second section-->
+			<fieldset id="second">
+				<legend>Lični podaci</legend>
+
+				<p>Kog ste pola?</p>
+				<input type="radio" name="pol" value="zenski" id="zenski" checked>
+				<label for="zenski">Ženski</label><br>
+				<input type="radio" name="pol" value="muski" id="muski">
+				<label for="muski">Muški</label>
+
+				<p>Koji je Vaš datum rođenja?</p>
+				<input type="date" name="bday" min="1900-01-01" max="1998-12-31">
+
+				<p>Koje je Vaše zanimanje?</p>
+				<input type="radio" name="zanimanje" value="ucenik" id="ucenik" checked>
+				<label for="ucenik">Učenik</label><br>
+				<input type="radio" name="zanimanje" value="student" id="student">
+				<label for="student">Student</label><br>
+				<input type="radio" name="zanimanje" value="zaposlen" id="zaposlen">
+				<label for="zaposlen">Zaposlen</label><br>
+				<input type="radio" name="zanimanje" value="nezaposlen" id="nezaposlen">
+				<label for="nezaposlen">Nezaposlen</label><br>
+				<input type="radio" name="zanimanje" value="drugo" id="drugo">
+				<label for="drugo">Drugo</label><br>
+
+				<p>Koji je naziv obrazovane institucije Vašeg najvišeg nivoa obrazovanja?</p>
+				<input list="skola" name="skola" placeholder="Izaberite od ponuđenih ili sami upišite" style="width: 50%">
+				<datalist id="skola">
+					<option value="FON">
+					<option value="ETF">
+					<option value="FPN">
+					<option value="FDU">
+					<option value="Viša turističko-ugostiteljska škola">
+					<option value="Viša medicinska škola">
+					<option value="Viša poslovna škola">
+				</datalist>
+			</fieldset>
+			<!--Third section-->
+			<fieldset id="third">
+				<legend>Interesovanja i prethodna iskustva</legend>
+
+				<p>Koji vid naše turističe ponude Vam se čini privlačnim?</p>
+				<input type="checkbox" name="interesovanje" value="hiking" id="hiking" checked>
+				<label for="hiking">Planinarenje</label><br>
+				<input type="checkbox" name="interesovanje" value="event" id="event">
+				<label for="event">Kulturne manifestacije</label><br>
+				<input type="checkbox" name="interesovanje" value="lecture" id="lecture">
+				<label for="lecture">Stručna predavanja</label><br>
+				<input type="checkbox" name="interesovanje" value="humane" id="humane">
+				<label for="humane">Humanitarni pohodi</label>
+
+				<p>Za humanitarne pohode nosimo prikupljene stvari, igračke i odeću, koje skupljamo tokom cele godine. Koliku novčanu donaciju biste bili voljni da date za prilog?</p>0 dinara
+				<input type="range" name="money" min="0" max="100000" step="100" value="50000">100.000 dinara
+
+				<p>Kako ste čuli za nas?</p>
+				<select name="channel">
+					<optgroup label="Društvene mreže">
+						<option value="facebook">Facebook</option>
+						<option value="instagra">Instagram</option>
+						<option value="twitter">Twitter</option>
+						<option value="youtube">YouTube</option>
+					</optgroup>
+					<optgroup label="Prezentacija">
+						<option value="web site" selected>Web Site</option>
+						<option value="skola">Škola</option>
+						<option value="fakultet">Fakultet</option>
+						<option value="kafic">Kafić</option>
+					</optgroup>
+				</select>
+					
+				<p>Molim Vas da napišete neka prethodna iskustva vezana za planinarenja, učestvovanja na kulturnim manifestacijama, stručnim predavanjima ili humanitarnim akcijama</p>
+				<textarea name="experience" placeholder="Navedi svoje prethodno iskustvo..."></textarea>
+			</fieldset>
+			
+			<footer>	
+				<input type="checkbox" name="condition" value="agree" id="agree" required>
+				<label for="agree">Potvrđujem da sam punoletan/punoletna</label><br>
+				<input type="submit" value="Pošalji prijavu">
+			</footer>
+		</form>
+	</main>
+</body>
+</html>

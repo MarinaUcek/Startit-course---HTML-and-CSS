@@ -1,0 +1,142 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Droid Sans', sans-serif;
+	background-color: #242424;
+	color: #242424;
+}
+
+/*Header section*/
+header {
+	color: #FFFACD;
+	margin: 10px;
+}
+
+header a img {
+	margin: 10px;
+}
+
+i {
+	float: right;
+	margin: 12px;
+	color: #FFFACD;
+	padding: 5px;
+}
+
+nav {
+	float: right;
+}
+
+nav ul {
+	padding: 0; 
+}
+
+nav ul li {
+	display: inline-block;
+}
+
+nav a {
+	text-decoration: none;
+	margin: 0 7px;
+	color: #FFFACD;
+	padding: 5px;
+}
+
+i:hover,
+nav ul li a:hover,
+main {
+	box-shadow: 3px 2px 3px rgba(255, 250, 205, 0.9);
+}
+
+/*Main section*/
+main {
+	overflow: hidden;
+	position: relative;
+	top: 40px;
+	max-width: 850px;
+	width: 95%;
+	margin: 0 auto 30px;
+	padding: 20px;
+	background-color: #FFFACD;
+	border: 2px solid #242424;
+	font-size: 15px;
+}
+
+h1 {
+	font-family: 'PT Sans', sans-serif;
+	text-align: center;
+	font-size: 30px;
+	margin: 20px 0;
+}
+
+fieldset {
+	position: relative;
+	top: 20px;
+	margin: 20px auto;
+	padding: 20px;
+	text-align: justify;
+}
+
+fieldset legend {
+	margin-left: 15%;
+	padding: 0 5px;
+	text-align: left;
+}
+
+fieldset input[type="text"],
+fieldset input[type="email"],
+fieldset input[type="url"] {
+	display: block;
+	margin-bottom: 20px;
+	width: 50%;
+	border: none;
+	border-bottom: 1px solid #242424;
+	background-color: #FFFACD;
+}
+
+textarea {
+	width: 100%;
+	border: none;
+	border-bottom: 1px solid #242424;
+	background-color: #FFFACD;
+}
+
+fieldset input[type="radio"],
+fieldset input[type="checkbox"] {
+	margin-bottom: 20px;
+}
+
+p {
+	margin-top: 21px;
+}
+
+/*Footer*/
+footer {
+	padding-left: 20px;
+	padding-top: 20px;
+}
+
+footer input {
+	margin: 10px 0;
+}
+
+@media screen and (max-width: 600px) {
+	
+	nav {
+		width: 100%;
+		text-align: center;
+	}
+
+	h1 {
+		font-size: 18px;
+	}
+
+	fieldset input[type="text"],
+	fieldset input[type="email"],
+	fieldset input[type="url"] {
+		width: 100%;
+	}
+
+}
