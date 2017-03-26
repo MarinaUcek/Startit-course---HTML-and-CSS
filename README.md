@@ -1,2 +1,2 @@
-# Startit-kurs---Pravljenje-sajtova
-Materijali sa predavanja
+# Startit-course---HTML-and-CSS
+Collection of homework assignments
