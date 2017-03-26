@@ -1,0 +1,390 @@
+/*
+01.General rules
+02.Navigation menu
+03.Story section
+03.01.Heading and subheading section
+03.02.Form section
+03.03.Location section
+04.Footer section
+04.01.Links section
+04.02.Footnote section
+*/
+
+/*01.General rules*/
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-size: 1.0625rem;
+	line-height: 1.6rem;
+	font-family: 'Lato', sans-serif;
+	margin: 0;
+	padding: 0;
+	color: #4a4a4a;
+}
+
+/*02.Navigation menu*/
+nav {
+	position: absolute;
+	top: initial;
+	width: 100%;
+	height: 70px;
+	z-index: 99;
+}
+
+nav .logo {
+	background: url("../img/header_logo_sprite.png") left top no-repeat;
+	background-size: 106px 60px;
+	height: 30px;
+	width: 106px;
+	float: left;
+	margin: 20px 0 0 1rem;
+}
+
+nav ul {
+	list-style-type: none;
+	margin: 0 20px 0 0;
+	padding: 0;
+	float: right;
+	line-height: 4.375rem;
+}
+
+nav ul li {
+	display: inline-block;
+}
+
+nav ul li a {
+	color: #fff;
+	text-decoration: none;
+	display: inline-block;
+	font-size: .9375rem;
+	font-weight: 700;
+	margin-left: 9px;
+	cursor: pointer;
+	line-height: 1em;
+	padding: 8px 7px 9px;
+	border-radius: 5px;
+	opacity: .8;
+}
+
+nav ul li a:hover {
+	opacity: 1;
+	background: rgba(0,0,0,.1);
+}
+
+nav ul li .button_sticky {
+	padding: 10px 14px 12px;
+	border-radius: 4px;
+	font-size: 12pt;
+	margin-left: 17px;
+	box-shadow: inset 0 0 0 2px rgba(255,255,255,.75);
+}
+
+nav ul li .button_sticky:hover {
+	box-shadow: inset 0 0 0 2px #fff, 0 1px 1px rgba(0,0,0,.1);
+	background: 0 0;
+}
+
+.fa-th-large,
+.fa-map-marker {
+	padding-right: 0.25rem;
+}
+
+/*03.Story section*/
+.cover {
+	width: 100%;
+	background-size: cover;
+	background-position: center top;
+	box-shadow: inset 0 0 2.125rem rgba(0,0,0,.2);
+	text-shadow: 0 0 1px rgba(0,0,0,.1);
+	padding: 0;
+	position: relative;
+	background-image: url("../img/nasa-header-image.jpg");
+	background-color: #999;
+}
+
+.story {
+	width: 100%;
+	color: #fff;
+	font-size: 1.59rem;
+	padding: 4.25rem 0;
+	position: relative;
+	text-align: center;
+	height: calc(100vh - 155px);
+	max-height: inherit;
+	z-index: 1;
+}
+
+.story div {
+	display: inline-block;
+	padding: 32px;
+	border-radius: 8px;
+}
+
+.story strong {
+	font-weight: 900;
+}
+
+.story .cta_ad {
+	display: block;
+	position:absolute;
+	width: 100%;
+	padding: 0;
+	bottom: 2.337rem;
+}
+
+/*03.01.Heading and subheading section*/
+.cta_story_header {
+	font-size: 3.61rem;
+	line-height: 4.46rem;
+	font-weight: 900;
+	text-align: center;
+	margin: 0 auto 2.65rem;
+	letter-spacing: .0106rem;
+	width: 840px;
+	margin-bottom: 0;
+}
+
+.underline_robots,
+.underline_mars {
+	font-style: italic;
+	position: relative;
+	line-height: 0;
+	display: inline-block;
+}
+
+.underline_robots img,
+.underline_mars img {
+	display: block;
+	width: 100%;
+	position: absolute;
+	top: 30px;
+}
+
+.exclamation_point {
+	font-style: italic;
+	font-size: 4rem;
+	font-weight: 600;
+}
+
+.story .cta_container {
+	padding-top: 0;
+}
+
+.story .cta_container .cta_subheader {
+	display: block;
+	font-size: 1.38rem;
+	line-height: 1.75rem;
+	margin: 40px auto 22px;
+	max-width: 869px;
+	padding: 0;
+	width: 100%;
+}
+
+/*03.02.Form section*/
+.story .cta_container .cta {
+	padding: 19px 48px;
+	background: rgba(0,0,0,.65);
+}
+
+.story .cta_container .cta .input_email {
+	margin-bottom: 0;
+	font-size: 1.249rem;
+	padding: 0.743rem;
+	width: 240px;
+	margin-right: 7px;
+	line-height: normal;
+	border: 1px solid #c5c5c5;
+	border-radius: 0.25rem;
+	max-width: 100%;
+}
+
+.story .cta_container .cta .input_email:focus {
+	border-color: #2780f8;
+}
+
+.story .cta_container .cta .btn {
+	font-weight: 700;
+	border: 1px solid #56b68b;
+	border-radius: 4px;
+	background: #56b68b;
+	color: #fff;
+	line-height: 3rem;
+	padding: 0;
+	width: 184px;
+	cursor: pointer;
+	font-size: 1.126rem;
+	opacity: 1;
+}
+
+.story .cta_container .cta .btn:hover {
+	opacity: 0.8;
+}
+
+.story .cta_container .cta_footer {
+	font-size: .9375rem;
+	line-height: 1.375rem;
+	display: block;
+	text-align: center;
+	margin: 19px 0 0;
+	width: 100%;
+}
+
+.story .cta_container .cta_footer a {
+	color: #fff;
+}
+
+/*03.03.Location section*/
+.story .story_location {
+	font-size: 0.85rem;
+	line-height: 1.16rem;
+	position: absolute;
+	bottom: 1.06rem;
+	right:1.59rem;
+	text-align: left;
+	padding: 0;
+}
+
+.story .story_location strong {
+	font-size: 0.95rem;
+}
+
+.story .story_location a {
+	text-decoration: none;
+	color: #fff;
+}
+
+.story .story_location a:hover {
+	text-decoration: underline;
+}
+
+/*04.Footer section*/
+footer {
+	position: relative;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	z-index: 10;
+	background: #fff;
+	padding: 40px 0 0;
+	color: #9e9ea6;
+	background-color: transparent;
+	border-top: 1px solid rgba(255,255,255,.1);
+}
+
+footer section {
+	width: 100%;
+	clear: both;
+	max-width: 1014px;
+	padding: 0 1.5rem !important;
+	margin: 0 auto;
+}
+
+/*04.01.Links section*/
+footer section.links {
+	height: 233.31px;
+}
+
+.col {
+	display: block;
+	float: left;
+	margin: 0 0 2%;
+	padding-right: 2%;
+	width: 23.8%;
+}
+
+.col+.col {
+	margin-left: 1.6%;
+}
+
+footer .fa-heart {
+	padding-left: 0.25rem;
+}
+
+footer section .col ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+footer section .col ul li:first-child {
+	text-transform: uppercase;
+	font-size: 0.6875rem;
+	font-weight: 700;
+	color: #fff;
+}
+
+footer ul a:link,
+footer ul a:visited {
+	font-size: 0.82rem;
+	text-decoration: none;
+}
+
+footer .fa-slack,
+footer a,
+footer a:link,
+footer a:visited {
+	color: rgba(255,255,255,.5);
+}
+
+footer .fa-slack:hover,
+footer a:hover,
+footer a:link:hover,
+footer a:visited:hover {
+	color: rgba(255,255,255,.7);
+}
+
+/*04.02.Footnote section*/
+footer .footnote {
+	margin-top: 1rem;
+	overflow: hidden;
+	width: 100%;
+	height: 50px;
+	background-color: rgba(255,255,255,.12);
+}
+
+footer .footnote .fa {
+	font-size: 20px;
+}
+
+footer .footnote .fa-slack {
+	margin-left: -3px;
+	line-height: 50px;
+}
+
+footer .footnote ul {
+	margin: 0 20px 0 0;
+	padding: 0;
+	list-style-type: none;
+	float: right;
+}
+
+footer .footnote ul li {
+	display: inline-block;
+	margin-right: .7rem;
+	float: left;
+	line-height: 3.125rem;
+}
+
+footer .footnote ul li:last-child {
+	line-height: 3rem;
+	margin-right: 0;
+}
+
+.gradient {
+	background: linear-gradient(to bottom, rgba(0,0,0,0) 0, #000 67%);
+	height: 660px;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+}
+
+
+@media screen and (min-width: 641px) {
+	
+	.story {
+		min-height: 686px;
+	}
+
+}
